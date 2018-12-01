@@ -138,34 +138,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #000;
 }
 
-.circle{
-    margin:10px;
-    width:100px;
-    background:green;
-    height:100px;
-    text-align:center;
-    border-radius:100px;
-    <strong>line-height: 90px; /* 100 - 10 */</strong>
-}
-.circle img{
-    border-radius: 90%;
-    line-height:15px;
-    height:150px;
-    width: 150px;
-    padding-top:-30px;
-    
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
 
 video{
   width: 100%;
@@ -503,19 +475,31 @@ img.avatar {
 }
 
 /*--------------------------------------------------------------
-# actuellite
+#     EVENT
 --------------------------------------------------------------*/
 
-#actuel .carousel-item{
+#event .carousel-item{
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: scroll;
+  background-image: url('arrie.jpg');
+  margin: 0;
+  padding:0; 
 }
 
-#actuel::before {
+/*@-webkit-keyframes mymove {
+    from {background-color: #BDB76B;}
+    to {background-color: black;}
+}
+ Standard syntax 
+@keyframes mymove {
+    from {background-color: black;}
+    to {background-color: #BDB76B;}
+}*/
+
+#event::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -526,34 +510,47 @@ img.avatar {
   left: 0;
   bottom: 0;
 }
+.container{max-width: 100%;}
 
 
-#actuel .container *{
+#event .container *{
   margin: 0px;
   padding: 0px;
+  
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+margin: 5px;
 
 }
 
-#actuel .container h1{
-  font-size: 2.5rem;
-  font-family: 'Montserrat';
-  font-weight: normal;
-  color: #111;
+#event  h1 {
+ font-family: Times; 
+  font-size: 60px; 
+  font-style: italic;
+   font-variant: normal; 
+   font-weight: 1000;
+ line-height: 68px; 
+perspective: center;
+
+ /* -webkit-animation: mymove 5s infinite;  Chrome, Safari, Opera 
+    animation: mymove 5s infinite;
+  */
+}
+
+#event  h1{
+   color: #111;
   text-align: center;
-  margin: 2rem 0;
-  padding-right: 200px;
+  padding-right: 300px;
 
 }
 
-#actuel .container .wrapper{
-  width: 90%;
+#event .container .wrapper{
+  width: 100%;
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 100%;
 }
 
-#actuel .container .cols{
+#event .container .cols{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,22 +559,23 @@ img.avatar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+        
 }
 
-#actuel .container .col{
+#event .container .col{
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
 }
 
-#actuel .container .container{
+#event .container .container{
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
 
-#actuel .container .front,
+#event .container .front,
  .back{
   background-size: cover;
   background-position: center;
@@ -596,14 +594,14 @@ img.avatar {
   font-size: 1.5rem;
 }
 
-#actuel .container .back{
+#event .container .back{
   background: #cedce7;
   background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
 }
 
-#actuel .container .front:after{
+#event .container .front:after{
   position: absolute;
     top: 0;
     left: 0;
@@ -618,7 +616,7 @@ img.avatar {
             backface-visibility: hidden;
     border-radius: 10px;
 }
-#actuel .container .container:hover .front,
+#event .container .container:hover .front,
 .container:hover .back{
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
     transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -627,14 +625,14 @@ img.avatar {
     transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1), -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-#actuel .container .back{
+#event .container .back{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-#actuel .container .inner{
+#event .container .inner{
     -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
             transform: translateY(-50%) translateZ(60px) scale(0.94);
     top: 50%;
@@ -650,41 +648,41 @@ img.avatar {
     z-index: 2;
 }
 
-#actuel .container .container .back{
+#event .container .container .back{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
- #actuel .container .container .front{
+ #event .container .container .front{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
 }
 
-#actuel .container .container:hover .back{
+#event .container .container:hover .back{
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-#actuel .container .container:hover .front{
+#event .container .container:hover .front{
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-#actuel .container .front .inner p{
+#event .container .front .inner p{
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
 }
 
-#actuel .container .front .inner p:after{
+#event .container .front .inner p:after{
   content: '';
   width: 4rem;
   height: 2px;
@@ -697,65 +695,113 @@ img.avatar {
   bottom: -.75rem;
 }
 
-#actuel .container .front .inner span{
+#event .container .front .inner span{
   color: rgba(255,255,255,0.7);
   font-family: 'Montserrat';
   font-weight: 300;
 }
 
 @media screen and (max-width: 64rem){
-  #actuel .container .col{
+  #event .container .col{
     width: calc(33.333333% - 2rem);
   }
 }
 
 @media screen and (max-width: 48rem){
-  #actuel .container .col{
+  #event .container .col{
     width: calc(50% - 2rem);
   }
 }
 
 @media screen and (max-width: 32rem){
-  #actuel .container .col{
+  #event .container .col{
     width: 100%;
     margin: 0 0 2rem 0;
   }
 }
 
 /*--------------------------------------------------------------
-# event
+#   ACTUELLE
 --------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
 
- #event .container .*,
+ #actuel .container .*,
 *:before,
 *:after{
+
   box-sizing: border-box;
-}
-
-#event {overflow-y: scroll;
-background-color: gray;
 
 }
 
- #event .container * {
+#actuel h1{
+
+  text-align: center;
+  padding-top: 10px ;
+  padding-right: 300px; 
+  font-family: Times; 
+  font-size: 60px; 
+  font-style: italic;
+   font-variant: normal; 
+   font-weight: 1000;
+ line-height: 68px;
+ color: blue;
+
+ -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    from {background-color: black;}
+    to {background-color: gray;}
+}
+/* Standard syntax */
+@keyframes mymove {
+    from {background-color: black;}
+    to {background-color: gray;}
+}
+
+
+#actuel {
+
+   /* The image used */
+    background-image: url('ar2.jpg');
+    display: fixed; 
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+}
+
+ #actuel .container * {
   user-select: none; 
   -webkit-tap-highlight-color: rgba(0,0,0,0); 
   transform-style: preserve-3d; 
   margin: 0;
   padding: 0;
 
+  
+
 
 }
 
- #event .container *:focus {
+ #actuel .container *:focus {
   outline: none!important; 
+
 }
 
 
 
- #event .container .container{
+ #actuel .container{
   width:100vw;
   height: 100vh;
   display: flex;
@@ -763,34 +809,39 @@ background-color: gray;
   perspective: 1000px;
   perspective-origin: center;
 
+
+
+
 }
 
- #event .container .col{
+ #actuel .container .col{
   height:  100%;
   transition: transform 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
   transform: translateZ(34px) scale(.98);
   flex: 0 0 33.3333%; 
   position: relative;
     margin-top:100px;
+    
+
 }
 
- #event .container .col:nth-of-type(1){
+ #actuel .container .col:nth-of-type(1){
   transform: rotateY(5deg) translateZ(34px) scale(.98);
 }
 
- #event .container .col:nth-of-type(3){
+ #actuel .container .col:nth-of-type(3){
   transform: rotateY(-5deg) translateZ(34px) scale(.98);
 }
 
- #event .container .col:hover,
- #event .container .col:focus{
+ #actuel .container .col:hover,
+ #actuel .container .col:focus{
   transform: translateZ(34px);
   transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
 }
 
- #event .container .card-container{
+ #actuel .container .card-container{
   position: relative;
-  width: calc(100% - 25px);
+  width: calc(75% - 25px);
   height:  calc(33.3% - 25px);
   margin: 17px;
   padding: 8px;
@@ -798,12 +849,12 @@ background-color: gray;
   opacity: .89;
 }
 
- #event .container .card-container:hover,
- #event .container .card-container:focus{
+ #actuel .container .card-container:hover,
+ #actuel .container .card-container:focus{
   opacity: 1;
 }
 
- #event .container .overlay{
+ #actuel .container .overlay{
   display: block;
   position: absolute;
   cursor: pointer;
@@ -813,51 +864,51 @@ background-color: gray;
   transform: translateZ(34px);
 }
 
- #event .container .overlay:nth-of-type(1){
+ #actuel .container .overlay:nth-of-type(1){
   left: 0;
   top: 0;
 }
 
- #event .container .overlay:nth-of-type(2){
+ #actuel .container .overlay:nth-of-type(2){
   right: 0;
   top: 0;
 }
 
- #event .container .overlay:nth-of-type(3){
+ #actuel .container .overlay:nth-of-type(3){
   bottom: 0;
   right: 0;
 }
 
- #event .container .overlay:nth-of-type(4){
+ #actuel .container .overlay:nth-of-type(4){
   bottom: 0;
   left: 0;
 }
 
- #event .container .overlay:nth-of-type(1):hover ~ .card,
- #event .container .overlay:nth-of-type(1):focus ~ .card{
+ #actuel .container .overlay:nth-of-type(1):hover ~ .card,
+ #actuel .container .overlay:nth-of-type(1):focus ~ .card{
   transform-origin: right top;
   transform: rotateX(3deg) rotateY(-3deg) translateZ(0);
 }
 
- #event .container .overlay:nth-of-type(2):hover ~ .card,
- #event .container .overlay:nth-of-type(2):focus ~ .card{
+ #actuel .container .overlay:nth-of-type(2):hover ~ .card,
+ #actuel .container .overlay:nth-of-type(2):focus ~ .card{
   transform-origin: left top;
   transform: rotateX(3deg) rotateY(3deg) translateZ(0);
 }
 
- #event .container .overlay:nth-of-type(3):hover ~ .card,
- #event .container .overlay:nth-of-type(3):focus ~ .card{
+ #actuel .container .overlay:nth-of-type(3):hover ~ .card,
+ #actuel .container .overlay:nth-of-type(3):focus ~ .card{
   transform-origin: left bottom;
   transform: rotateX(-3deg) rotateY(3deg) translateZ(0);
 }
 
- #event .container .overlay:nth-of-type(4):hover ~ .card,
- #event .container .overlay:nth-of-type(4):focus ~ .card{
+ #actuel .container .overlay:nth-of-type(4):hover ~ .card,
+ #actuel .container .overlay:nth-of-type(4):focus ~ .card{
   transform-origin: right bottom;
   transform: rotateX(-3deg) rotateY(-3deg) translateZ(0);
 }
 
- #event .container .card{
+ #actuel .container .card{
   border-radius: 5px;
   height: 100%;
   transition: all 300ms ease-out;
@@ -872,8 +923,8 @@ background-color: gray;
   padding: 13px 21px;
 }
 
- #event .container .card:before,
- #event .container .card:after{
+ #actuel .container .card:before,
+ #actuel .container .card:after{
   content: '';
   position: absolute;
   left:0;
@@ -886,60 +937,60 @@ background-color: gray;
   transform: scale(.98);
 }
 
- #event .container .card:before{
+ #actuel .container .card:before{
   background-size: cover;
   background-position: 50% 50%;
 }
 
- #event .container .card-container:hover .card:before,
- #event .container .card-container:hover .card:after,
- #event .container .card-container:focus .card:before,
+ #actuel .container .card-container:hover .card:before,
+ #actuel .container .card-container:hover .card:after,
+ #actuel .container .card-container:focus .card:before,
  #event .container .card-container:focus .card:after{
   opacity: .34;
   transform: scale(1);
 }
 
- #event .container .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+ #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
 }
 
- #event .container .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+ #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
 }
 
- #event .container .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+ #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
 }
 
- #event .container .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
+ #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jwst-pv-145604copy.jpg?itok=Jq7GN-Rc');
 }
 
- #event .container .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
+ #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/worldview201709201920x1080.png');
 }
 
- #event .container .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
+ #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/nasasibexobs.jpg?itok=U2LCp14i');
 }
 
- #event .container .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
+ #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
 }
 
- #event .container .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
+ #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
 }
 
- #event .container .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
+ #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
 }
 
- #event .container .card:after{
+ #actuel .container .card:after{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
 }
 
- #event .container h4{
+ #actuel .container h4{
   text-align: left;
   font-size: 18px;
   font-weight:400;
@@ -949,76 +1000,76 @@ background-color: gray;
   outline: 1px solid transparent;
 }
 
- #event .container .overlay:hover ~ .card h4,
- #event .container .overlay:focus ~ .card h4{
+ #actuel .container .overlay:hover ~ .card h4,
+ #actuel .container .overlay:focus ~ .card h4{
   transform: translateZ(144px);
 }
 
- #event .container .card > span{
+ #actuel .container .card > span{
   font-size: 34px;
   opacity: 0;
   transform: translateX(-3px);
   transition: all 300ms ease;
 }
 
- #event .container .card-container:hover > .card > h4,
- #event .container .card-container:focus > .card > h4{
+ #actuel .container .card-container:hover > .card > h4,
+ #actuel .container .card-container:focus > .card > h4{
   transform: translateY(-13px);
 }
 
- #event .container .card-container:hover > .card > span,
- #event .container .card-container:focus > .card > span{
+ #actuel .container .card-container:hover > .card > span,
+ #actuel .container .card-container:focus > .card > span{
  opacity: 1;
     transform: translateX(3px);
   animation: slideRight 300ms ease;
 }
 
 @media (max-width: 768px){
-   #event .container body{
+   #actuel .container body{
     overflow-y: scroll;
   }
-   #event .container h4{
+   #actuel .container h4{
     font-size: 17px;
   }
 }
 
 @media (max-width: 540px){
-   #event .container .container{
+   #aactuel  .container{
     flex-flow: column;
     perspective: none;
   }
   
-   #event .container .col:nth-of-type(1),
-   #event .container .col:nth-of-type(2),
-   #event .container .col:nth-of-type(3),
-   #event .container .col:hover{
+   #actuel .container .col:nth-of-type(1),
+   #actuel .container .col:nth-of-type(2),
+   #actuel .container .col:nth-of-type(3),
+   #actuel .container .col:hover{
       transform: none;
   }
   
-  #event .container  h4{
+  #actuel .container  h4{
     padding-bottom: 8px;
     font-size: 18px;
   }
   
- #event .container .card > span{
+ #actuel .container .card > span{
       display: none;
   }
 }
 
 @media (max-height: 599px){
- #event .container .card > span{
+ #actuel .container .card > span{
       display: none;
   }
 }
 
 @media (max-width: 860px) and (max-height: 540px){
-  #event .container  h4{
+  #actuel .container  h4{
     font-size: 14px;
   }
 }
 
 @media (max-width: 620px) and (max-height: 540px){
-  #event .container  h4{
+  #actuel .container  h4{
     font-size: 13px;
   }
 }
@@ -1031,6 +1082,7 @@ background-color: gray;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: transparent;
 }
 
 .nav-menu ul {
@@ -2070,6 +2122,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
+
 }
 
 #footer .footer-top {
@@ -2077,6 +2130,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 30px 0;
   position: relative;
   display: block;
+
 }
 
 #footer .footer-top .footer-info {
