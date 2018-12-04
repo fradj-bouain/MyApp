@@ -40,30 +40,22 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+<header id="header">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">EVENT-SPORT</a></h1>
+        <h1><a href="#intro" class="scrollto">SportEvent</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">PRESS</a></li>
-          <li><a href="#services">EVENT</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
+          <li class="menu-active" ><a href="#intro">Acceuil</a></li>
+          <li><a href="#about">info</a></li>
+          <li><a href="#services">Liste d'evenments</a></li>
+          <li ><a href="#portfolio">Liste de salle</a></li>
+          <li><a href="#team">espace salle</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -75,8 +67,13 @@
   ============================-->
   <section id="intro">
     <div class="intro-container">
+<<<<<<< HEAD
       <div id="introCarousel"  data-ride="carousel">
           <div class="carousel-item active" style="background-image: url('img/intro-carousel/1.jpg');">
+=======
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+          <div class="carousel-item active" style="background-image: url('img/intro-carousel/banner11.jpg');">
+>>>>>>> c5d469ed490e1c970f4e493af1ce068186a68073
          <div class="carousel-container">
               <div class="carousel-content">
 
@@ -92,7 +89,7 @@
       <div class="sign-in-htm">
         <div class="group">
           <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
+          <input id="user" type="text"  class="input">
         </div>
         <div class="group">
           <label for="pass" class="label">Password</label>
@@ -135,10 +132,10 @@
       
         <div class="row">
 
-          <div class="col-lg-12 box">
+          <div class="vedio col-md-12 box">
           
                          <video muted autoplay loop>
-  <source src="vid/vid1.avi" type="video/avi">
+                   <source  src="vid/vedio2.mp4" type="video/mp4" >
   
           </video>
           </div>
@@ -418,22 +415,30 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-             <h1><a href="#intro" class="scrollto"><img src="img/intro-carousel/logo.png" width="300px" height="50px" alt=""></a></h1>
-            <p>365 Events a été le cerveau (et le cœur) derrière certains des événements les plus grandioses en Tunisie.</p>
+            <h3>SportEvent</h3>
+            
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Acceuil</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Info</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Liste des événments </a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Liste des salles</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Espace salle</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Contact</a></li>
+            </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+            
+              Sousse, NY 535022<br>
+              Tunisia <br>
+              <strong>Phone:</strong> +216 73 425 145<br>
+              <strong>Email:</strong> sportevent.com<br>
             </p>
 
             <div class="social-links">
@@ -442,13 +447,15 @@
               <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
               <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-             </div>
+            </div>
 
           </div>
 
-                       <div class="col-lg-3 col-md-6 footer-newsletter">
-           
-                       </div>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Les événements professionnels sont considérés comme une partie importante de la stratégie de communication d’une organisation. Il s’agit d’une action dont le premier but est de promouvoir l’entreprise et d’améliorer son image.</p>
+            
+          </div>
 
         </div>
       </div>
@@ -456,7 +463,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+        &copy; Copyright <strong>SportEvent</strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!--
@@ -465,7 +472,7 @@
           Licensing information: https://bootstrapmade.com/license/
           Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
         -->
-        Best <a href="https://bootstrapmade.com/">Bootstrap Templates</a> by BootstrapMade
+       
       </div>
     </div>
   </footer><!-- #footer -->
