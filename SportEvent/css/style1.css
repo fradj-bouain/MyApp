@@ -951,27 +951,27 @@ perspective: center;
 }
 
  #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia22474-2000.jpg?itok=cajl1lYH');
+      background-image: url('img/press/1.jpg');
 }
 
  #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
+      background-image: url('img/press/2.jpg');
 }
 
  #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
+      background-image: url('img/press/3.jpg');
 }
 
  #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jwst-pv-145604copy.jpg?itok=Jq7GN-Rc');
+      background-image: url('img/press/4.jpg');
 }
 
  #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/worldview201709201920x1080.png');
+      background-image: url('img/press/5.jpg');
 }
 
  #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/nasasibexobs.jpg?itok=U2LCp14i');
+      background-image: url('img/press/6.jpg');
 }
 
  #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
