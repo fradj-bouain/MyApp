@@ -151,7 +151,7 @@ video{
 
 
 *,:after,:before{box-sizing:border-box}
-.clearfix:after,.clearfix:before{content:'';display:table}
+
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 
@@ -484,9 +484,10 @@ img.avatar {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('arrie.jpg');
+  background-image: url("../img/espaceback.jpg");
   margin: 0;
   padding:0; 
+  padding-top: 5%;
 }
 
 /*@-webkit-keyframes mymove {
@@ -764,7 +765,7 @@ perspective: center;
 #actuel {
 
    /* The image used */
-    background-image: url('ar2.jpg');
+    background-image: url("../img/espaceback.jpg");
     display: fixed; 
 
     /* Full height */
@@ -957,6 +958,8 @@ perspective: center;
  #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/m18-090.jpg?itok=TQ8Fuk4x');
 }
+
+
 
  #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
       background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/40808879360_18c96d62f1_o.jpg?itok=NttmTWPK');
