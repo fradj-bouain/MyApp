@@ -139,9 +139,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-video{
+#featured-services video{
   width: 100%;
-  height: 212px;
+  
 
 }
 
@@ -545,6 +545,10 @@ perspective: center;
 
 }
 
+
+
+
+
 #event .container .wrapper{
   width: 100%;
   margin: 0 auto;
@@ -734,6 +738,35 @@ perspective: center;
   box-sizing: border-box;
 
 }
+#actuel p{
+
+
+  font-size: 82px;
+  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #090;
+  padding:70px;
+  padding-top:  150px;
+  padding-right: 970px;
+  font-weight:lighter;
+  text-decoration: underline;
+  text-align:center;
+}
+
+
+#actuel h4{
+
+   text-align: justify; /* For Edge */
+    -moz-text-align-last: center; /* For Firefox prior 58.0 */
+    text-align-last: center;
+    color:white;
+    font-weight:lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 170px;
+
+}
+
+
 
 #actuel h1{
 
@@ -952,41 +985,41 @@ perspective: center;
 }
 
  #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
-      background-image: url('img/press/1.jpg');
+      background-image: url('../img/press/1.jpg');
 }
 
  #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-      background-image: url('img/press/2.jpg');
+      background-image: url('../img/press/2.jpg');
 }
 
 
 
  #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-      background-image: url('img/press/3.jpg');
+      background-image: url('../img/press/3.jpg');
 }
 
  #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
-      background-image: url('img/press/4.jpg');
+      background-image: url('../img/press/4.jpg');
 }
 
  #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
-      background-image: url('img/press/5.jpg');
+      background-image: url('../img/press/5.jpg');
 }
 
  #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
-      background-image: url('img/press/6.jpg');
+      background-image: url('../img/press/6.jpg');
 }
 
  #actuel .container .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
+      background-image: url('../img/press/7.jpg');
 }
 
  #actuel .container .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
+      background-image: url('../img/press/8.jpg');
 }
 
  #actuel .container .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
-      background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
+      background-image: url('../img/press/9.jpg');
 }
 
  #actuel .container .card:after{
